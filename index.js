@@ -7,6 +7,8 @@
 require('./config')
 const { default: makeWASocket, useSingleFileAuthState, DisconnectReason, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage } = require("@adiwajshing/baileys-md")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
+const express = require('express')
+const app = express()
 const pino = require('pino')
 const fs = require('fs')
 const chalk = require('chalk')
@@ -14,6 +16,12 @@ const fetch = require('node-fetch')
 const FileType = require('file-type')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag } = require('./lib/myfunc')
+
+app.get('/', function(req, res){
+   res.send("Hello world!");
+});
+
+app.listen(3000);
 
 global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 

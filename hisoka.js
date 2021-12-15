@@ -1,7 +1,7 @@
 /**
    * Create By Dika Ardnt.
    * Contact Me on wa.me/6288292024190
-   * Follow https://github.com/DikaArdnt
+   * Follow https://github.com/dikaArdnt
 */
 
 require('./config')
@@ -85,7 +85,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate) => {
 
         switch(command) {
 	    case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : https://ko-fi.com/cak_haho\n\n Dont Forget Donate')
+                m.reply('CHAT OWNER KAKA \n \n *YNTKTS-bot*')
             }
             break
             case 'chat': {
@@ -520,12 +520,12 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'owner': case 'creator': {
                 let vcard = 'BEGIN:VCARD\n' // metadata of the contact card
                     + 'VERSION:3.0\n' 
-                    + 'N:;Dika Ardnt.;;;'
-                    + 'FN:Dika Ardnt.\n' // full name
+                    + 'N:;regad ryl.;;;'
+                    + 'FN:Regad ryl.\n' // full name
                     + 'ORG:Owner Bot;\n' // the organization of the contact
-                    + 'TEL;type=CELL;type=VOICE;waid=6288292024190:+62 882-9202-4190\n' // WhatsApp ID + phone number
+                    + 'TEL;type=CELL;type=VOICE;waid=6281455037288:+62 814-5503-7288\n' // WhatsApp ID + phone number
                     + 'END:VCARD'
-                hisoka.sendMessage(m.chat, { contacts: { displayName: 'Dika Ardnt.', contacts: [{ vcard }] } }, { quoted: m })
+                hisoka.sendMessage(m.chat, { contacts: { displayName: 'regad ryl.', contacts: [{ vcard }] } }, { quoted: m })
             }
             break
             case 'eval': {
@@ -647,13 +647,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             hydratedContentText: anu,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Youtube',
+                                    url: 'https://youtube.com/channel/UCzaF7QEkl9y7tbF33NOLdeA'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    phoneNumber: '+62 814-5503-7288'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -667,8 +667,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: 'YNTKTS-BOT',
+                                    id: 'yt'
                                 }
                             }]
                         }
